@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import { router } from "./router/router";
+import "./router/features/styles/style.scss"
+import { Nav } from "./components/pages/nav/Nav";
 
 function App() {
+  const routes = router()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="poster">
+        <Nav/>
+        <div className="content">
+          {routes}
+          <div className="end">
+            warning :  your posts saving on local item their do not see other peoples 
+          </div>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

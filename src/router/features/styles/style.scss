@@ -1,0 +1,19 @@
+.poster{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    position: relative;
+}
+.content{
+    padding: 0px 20px;
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.end{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(194, 8, 8);
+}

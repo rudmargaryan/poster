@@ -1,0 +1,21 @@
+.nav{
+    position: fixed;
+    position: relative;
+}
+.nav__item{
+    min-width: 25%;
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    border-radius: 20px;
+    box-shadow: 17px 8px 36px 3px rgba(0,0,0,0.52);
+    &__poster{
+        .title{
+            font-family: hurrican;
+            font-size: 60px;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+    }
+}
