@@ -3,17 +3,45 @@
     display: grid;
     grid-template-columns: 25% 75%;
     position: relative;
+    @media screen and (max-width:998px) {
+     grid-template-columns: 100% 100%;
+        
+
+    }
 }
 .content{
     padding: 0px 20px;
-    min-height: 99vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-left: 80px;
+    padding-top: 40px;
+    @media screen and (max-width:998px) {
+        grid-row: 2;
+        min-height: auto !important;
+        padding: 0px;
+    }
+}
+.nav{
+    @media screen and (max-width:998px) {
+        grid-column: 0/100;
+        grid-row: 1/1;
+    }
 }
 .end{
+    position: fixed;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
     color: rgb(194, 8, 8);
+    cursor: pointer;
+    bottom: 10px;
+    @media screen and (max-width:998px) {
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+    }
+    @media screen and (max-width:721px) {
+        position: fixed;
+        width: 100%;
+        font-size: 18px;
+        bottom: 10px;
+    }
 }
